@@ -34,6 +34,7 @@ void display (int i)
             digitalWrite (E,1);
             digitalWrite (F,1);
             digitalWrite (G,0);
+            break;
             //a,b,c,d,e,f,g
           }
         case 1:
@@ -45,6 +46,7 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,0);
             digitalWrite (G,0);
+            break;
             //b,c
           }
         case 2:
@@ -56,6 +58,7 @@ void display (int i)
             digitalWrite (E,1);
             digitalWrite (F,0);
             digitalWrite (G,0);
+            break;
          //a,b,g,e,d 
         }
          case 3:
@@ -67,6 +70,7 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,0);
             digitalWrite (G,1);
+            break;
          //a,b,c,g,d 
         }
         case 4:
@@ -78,6 +82,7 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,1);
             digitalWrite (G,1);
+            break;
          //f,g,b,c 
         } 
         case 5:
@@ -89,6 +94,7 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,1);
             digitalWrite (G,1);
+            break;
          //a,f,g,c,d 
         } 
         case 6:
@@ -100,6 +106,7 @@ void display (int i)
             digitalWrite (E,1);
             digitalWrite (F,1);
             digitalWrite (G,1);
+            break;
          //a,f,g,c,d,e
         }
         case 7:
@@ -111,6 +118,7 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,0);
             digitalWrite (G,0);
+            break;
          //a,b,c
         } 
         case 8:
@@ -122,6 +130,7 @@ void display (int i)
             digitalWrite (E,1);
             digitalWrite (F,1);
             digitalWrite (G,1);
+            break;
          //a,b,c,d,e,f,g 
         }
         case 9:
@@ -133,8 +142,20 @@ void display (int i)
             digitalWrite (E,0);
             digitalWrite (F,1);
             digitalWrite (G,1);
+            break;
          //a,f,g,b,c
         } 
+        default:
+        {
+            digitalWrite (A,0);   
+            digitalWrite (B,0);   
+            digitalWrite (C,0);
+            digitalWrite (D,0);
+            digitalWrite (E,0);
+            digitalWrite (F,0);
+            digitalWrite (G,0);
+            break;
+        }
       }
 }
 
